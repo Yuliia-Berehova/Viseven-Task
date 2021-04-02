@@ -1,0 +1,223 @@
+/* roboto-500 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/roboto-v20-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/roboto-v20-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v20-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --main-font: "Roboto", sans-serif;
+  --main-color: #070707;
+  --secondary-color: #828282;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  width: 945px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 40px;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header {
+  padding-top: 40px;
+}
+
+.navigation {
+  height: 50px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.navigation__list-link {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--secondary-color);
+}
+
+.navigation__list-link:hover {
+  color: var(--main-color);
+}
+
+.home {
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+
+.home__section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 55px;
+}
+
+.home__section-name {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--main-color);
+}
+
+.home__section-description_wrapper {
+  width: 259px;
+  text-align: right;
+}
+.home__section-description {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--main-color);
+}
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.about__section-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__section-description_wrapper {
+  height: 220px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__section-description {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--main-color);
+}
+
+.skills {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.skills__section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.portfolio__section-item {
+  text-align: center;
+}
+.portfolio__section-item:not(:last-child) {
+  margin-bottom: 86px;
+}
+
+.portfolio__section-image {
+  margin-bottom: 40px;
+}
+
+.portfolio__section-link {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.portfolio__section-link:hover {
+  color: var(--secondary-color);
+}
+
+.contacts {
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+
+.contacts-title {
+  margin-bottom: 37px;
+}
+.social-list {
+  width: 340px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.social-list__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.social-list__item-link:hover .social-list__icon {
+  fill: var(--secondary-color);
+}
